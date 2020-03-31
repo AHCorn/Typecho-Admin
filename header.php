@@ -4,7 +4,7 @@
 	<li class="parent"><a href="<?php $this->options->siteUrl(); ?>">概要</a></li>
 	</ul>
 <ul class="root">
-	<li class="parent"><a href="/p">文章</a></li>
+	<li class="parent"><a href="<?php $this->options->siteUrl(); ?>/post.html">文章</a></li>
 </ul>
 <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
 <?php while($pages->next()): ?>
